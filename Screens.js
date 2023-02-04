@@ -1,7 +1,6 @@
 import React from 'react';
 import {Image, StyleSheet} from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
 const Tab = createBottomTabNavigator();
 // screens
 import HomeScreen from "./screens/home";
@@ -22,6 +21,7 @@ import {
 } from "./Icons";
 function Screen() {
   return (
+   
     <Tab.Navigator
       screenOptions={{
         tabBarShowLabel: false,
@@ -86,6 +86,7 @@ function Screen() {
        }}
        />
     </Tab.Navigator>
+
   );
 }
 
