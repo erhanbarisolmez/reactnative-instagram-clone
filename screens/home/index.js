@@ -1,17 +1,25 @@
-import {View, Text, StyleSheet} from "react-native";
+import {View, Text, StyleSheet,ScrollView} from "react-native";
 import Header from "./companents/Header";
 import Stories from "./companents/Stories";
 import posts from "../../data/posts";
 import Post from "../../companents/shared/Post";
+import Divider from "../../companents/shared/Divider";
+
+
 function Home() {
     return(
-    <View style={styles.container}>
-         <Header />
+        <>
+    <Header />
+    <ScrollView 
+    stickyHeaderIndices={[1]}
+    style={styles.container}>
+       
          <Stories />
+         <Divider />
          {posts.map(post => 
          <Post key={post.id} post={post}/>)}
-    </View>
-       
+    </ScrollView>
+    </>
     )
 }
 

@@ -1,4 +1,5 @@
-import {View, Text} from "react-native";
+import {View, Text, StyleSheet} from "react-native";
+
 function Search() {
     return(
     <View>
@@ -9,3 +10,7 @@ function Search() {
 }
 
 export default Search;
+
+const styles = StyleSheet.create({
+
+})

@@ -36,8 +36,7 @@ export default Stories;
 const styles = StyleSheet.create({
  storie:{
     paddingVertical: 10,
-    borderBottomWidth: 0.5,
-    borderBottomColor: '#DADADA'
+
  },
  story:{
     width: 67,
